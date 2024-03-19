@@ -104,20 +104,77 @@ if ($country === "BR") {
   echo "Uh, you're from somewhere else... <br>";
 }
 
+echo "While loop";
 
-echo "do while <br>";
+$fuel = 10;
+while ($fuel > 1) {
+  print "Vroom vroom <br>";
+  $fuel--;
+}
 
-$count = 0;
+echo "do while loop <br>";
 
+$counter = 1;
+$number = 30;
+
+$count = 1;
 do {
-  $count = $count + 3;
-  echo "$count + 3 = $count";
-} while ($count <= 23);
+  echo "$count * 5 equals to " . $count * 5 . "<br>";
+  $count++;
+} while ($count < 5);
+
+$addThree = 1;
+do {
+  echo "$addThree + 3 equals to " . $addThree + 3 . "<br>";
+  $addThree = $addThree + 3;
+} while ($addThree < 28);
+
+echo "for loop <br>";
+
+// find odd numbers between 0 and 30
+
+$n1 = 10;
+
+for($count = 0; $count <= $n1; $count++) {
+  $isOdd = $count % 2;
+  if ($isOdd == 0) {
+    echo "$count is odd <br>";
+  } else {
+    echo "$count is even <br>";
+  }
+}
 
 
+// testing conversion type
+echo "<br> testing conversion type <br>";
+
+$n2 = 10;
+for ($count = 0; $count <= $n2; $count++) {
+  if ($count % 2) {
+    echo "$count is even <br>";
+  } else {
+    echo "$count is odd <br>";
+  }
+}
 
 
+echo "break <br>";
 
+// count till 4
+for ($j = 1; $j < 500; $j++){
+  if ($j == 5) break;
+  echo "Count: $j";
+}
+echo "Done <br>";
+
+echo "continue <br>";
+
+
+// display only the even numbers
+for ($k = 0; $k < 10; $k++) {
+  if (($k % 2) == 0) continue;
+  echo "Count: $k <br>";
+}
 
 
 
