@@ -176,6 +176,10 @@ for ($k = 0; $k < 10; $k++) {
   echo "Count: $k <br>";
 }
 
+$x = 1200 + "34" . "<br>";
+echo $x;
 
+$escapeStr = 'lmao\\brazy, \'someone said\'';
+echo $escapeStr;
 
 ?>
